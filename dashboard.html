@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS Link -->
+    <link href="style/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fontawsome Script -->
+    <script src="https://kit.fontawesome.com/57b23ba07e.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style/dashboard.css" type="text/css">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <h1><a id="logo" class="navbar-brand fst-italic fw-bolder" href="index.html">MedicHelp</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav_menu_link nav-link ms-3 me-3 mt-2" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_menu_link nav-link ms-3 me-3 mt-2" href="about_us.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_menu_link nav-link ms-3 me-3 mt-2" href="contact_us.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a id="nav_login_link" class="nav-link ms-3 me-3 mt-2 rounded-3 ms-2 text-center" href="login.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Diseases Section -->
+    <div class="container-fluid mt-5 mb-5">
+        <h1 class="text-center" id="diseases_heading">Diseases</h1>
+        <div class="row mt-5">
+            <!-- Fever Modal Section -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+                <img src="imgs/fever.png" alt="Fever" srcset="" width="150px">
+                <h3 class="mt-2 disease_name">Fever</h3>
+                <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#fever_Modal">Show Details</button>
+                <div class="modal fade" id="fever_Modal" tabindex="-1" aria-labelledby="feverModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="feverModalLabel">Fever</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                          <p>Sweating, Chills and shivering, Headache, Muscle aches, Loss of appetite, Irritability, Dehydration, General weakness.</p>
+                          <h5 class="modal_body_heading mt-5">MNT</h5>
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Food Allowed</th>
+                                <th scope="col">Food Not Allowed</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-start">
+                              <tr>
+                                <td>Fluid-rich foods: Drink water, hot tea, fresh fruit juice. Intake of fluid-rich foods is recommended such as poultry broths, thin soups, coconut water.</td>
+                                <td>Avoid fruits with heavy sugar and fruits canned in syrup because sugar inhibits the immune system. The banana provides vital nutrients and easy to digest.</td>
+                              </tr>
+                              <tr>
+                                <td>Fresh fruits: Fruits like apples, oranges, watermelon, pineapple, kiwi are rich in vitamin C. This contains antioxidants that reduce fever.</td>
+                                <td>Whole pulses & pulses with husk. All raw & strongly flavoured vegetables like cabbage, capsicum, turnip, raddish, onion, garlic, etc. Fried & fatty food items such as pakora, ladoos, bhatura, samosa etc. Chemical irritants such as condiments, spices, pickle, chutney.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Common Cold  -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+                <img src="imgs/cold.png" alt="cold" srcset="" width="150px">
+                <h3 class="mt-2 disease_name">Cold</h3>
+                <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#cold_Modal">Show Details</button>
+                <div class="modal fade" id="cold_Modal" tabindex="-1" aria-labelledby="coldModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title disease_name" id="coldModalLabel">Cold</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                          <p>Sneezing, Stuffy nose, Runny nose, Sore throat, Coughing, Mucus dripping down your throat (post-nasal drip), Watery eyes, Fever (although most people with colds do not have fever)</p>
+                          <h5 class="modal_body_heading mt-5">MNT</h5>
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Food Allowed</th>
+                                <th scope="col">Food Not Allowed</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-start">
+                              <tr>
+                                <td>Broth</td>
+                                <td>Avoid salty foods, alcohol, coffee and sugary drinks, which can be dehydrating. Ice chips are another simple way to stay hydrated and calm a scratchy throat.</td>
+                              </tr>
+                              <tr>
+                                <td>Soup</td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>Fruits and veggies with vitamin C 
+                                    Citrus fruit, such as oranges and grapefruits.
+                                    Broccoli.
+                                    Brussels sprouts.
+                                    Cantaloupe.
+                                    Kiwi.
+                                    Peppers.
+                                    Potatoes.
+                                    Strawberries.
+                                    Tomatoes.</td>
+                                    <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Malaria  -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+                <img src="imgs/malaria.png" alt="cold" srcset="" width="150px">
+                <h3 class="mt-2 disease_name">Malaria</h3>
+                <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#malaria_Modal">Show Details</button>
+                <div class="modal fade" id="malaria_Modal" tabindex="-1" aria-labelledby="malariaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title disease_name" id="malariaModalLabel">Malaria</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                          <p>Fever (This is the most common symptom), Chills, Headache, Sweats, Fatigue, Nausea and vomiting, Body aches, Generally feeling sick.</p>
+                          <h5 class="modal_body_heading mt-5">MNT</h5>
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Food Allowed</th>
+                                <th scope="col">Food Not Allowed</th>
+                              </tr>
+                            </thead>
+                            <tbody class="text-start">
+                              <tr>
+                                <td>Fresh fruits and vegetables work wonders for malaria patients. </td>
+                                <td>Avoid intake of coffee, tea, cocoa, cola or any other caffeinated beverages.</td>
+                              </tr>
+                              <tr>
+                                <td>According to studies, vitamin A and vitamin C rich fruits and vegetables like beetroot, carrot, papaya, sweet lime, grapes, berries, lemon, orange help to detoxify and boost the immunity of the patient suffering from malaria.</td>
+                                <td>Refrain from having food that is spicy and/or hot. It will result in unnecessary stomach problems and heartburn. Sauces and pickles shouldn't be included anywhere in the diet for a malaria patient. </td>
+                              </tr>
+                              <tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Typhoid  -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+              <img src="imgs/typhoid.png" alt="typhoid" srcset="" width="150px">
+              <h3 class="mt-2 disease_name">Typhoid</h3>
+              <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#typhoid_Modal">Show Details</button>
+              <div class="modal fade" id="typhoid_Modal" tabindex="-1" aria-labelledby="typhoidModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title disease_name" id="typhoidModalLabel">Typhoid</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                        <p>Early symptoms include fever, general ill-feeling, and abdominal pain, High fever (103°F, or 39.5°C) or higher 
+                          Bloody stools, Chills, Agitation, confusion, delirium, seeing or hearing things that are not there (hallucinations), Difficulty paying attention (attention deficit), Nosebleeds, Severe fatigue
+                          Slow, sluggish, weak feeling</p>
+                        <h5 class="modal_body_heading mt-5">MNT</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Food Allowed</th>
+                              <th scope="col">Food Not Allowed</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-start">
+                            <tr>
+                              <td>Cooked vegetables can be consumed during typhoid so that the body receives vital nutrients to get stronger. Well cooked or boiled vegetables like potatoes, carrots, beets, raw papaya and squash can be consumed. They are easy to digest and provide nutrients. </td>
+                              <td>Avoid all the food items that are high in fibre as they are difficult to digest and put pressure on your digestive system. During typhoid, patients have an upset stomach and eating fibre-rich food items worsens it. Avoid raw fruits, vegetables, oats, barley, seeds, whole grains, nuts, and legumes.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Diarrhea  -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+              <img src="imgs/diarrhea.png" alt="diarrhea" srcset="" width="150px">
+              <h3 class="mt-2 disease_name">Diarrhea</h3>
+              <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#diarrhea_Modal">Show Details</button>
+              <div class="modal fade" id="diarrhea_Modal" tabindex="-1" aria-labelledby="diarrheaModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title disease_name" id="diarrheaModalLabel">Diarrhea</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                        <p>Belly (abdominal) cramps, Stomach pain, Swelling (bloating), Upset stomach (nausea), Urgent need to go to the bathroom, Fever, Bloody stools, Loss of body fluids (dehydration).</p>
+                        <h5 class="modal_body_heading mt-5">MNT</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Food Allowed</th>
+                              <th scope="col">Food Not Allowed</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-start">
+                            <tr>
+                              <td>It is best to eat thicker, bland foods, including oatmeal, bananas, plain rice, and applesauce,” he says. Other bland foods that are easy to stomach include: Boiled potatoes. Toast.</td>
+                              <td>Avoid caffeine, alcohol, and carbonated drinks. Limit or cut out milk and other dairy products if they are making your diarrhea worse or causing gas and bloating</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <!-- Gastrointestinal problems  -->
+            <div class="col-md-4 mt-5 mb-3 text-center">
+              <img src="imgs/gastrointestinal.png" alt="gastrointestinal" srcset="" width="150px">
+              <h3 class="mt-2 disease_name">Gastrointestinal</h3>
+              <button class="btn disease_btn" type="button"  data-bs-toggle="modal" data-bs-target="#gastrointestinal_Modal">Show Details</button>
+              <div class="modal fade" id="gastrointestinal_Modal" tabindex="-1" aria-labelledby="gastrointestinalModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title disease_name" id="gastrointestinalModalLabel">Gastrointestinal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="modal_body_heading">Signs and Symptoms</h5>
+                        <p>Bleeding, Bloating, Constipation, Diarrhea, Heartburn, Incontinence, Nausea and vomiting, Pain in the belly.</p>
+                        <h5 class="modal_body_heading mt-5">MNT</h5>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col">Food Allowed</th>
+                              <th scope="col">Food Not Allowed</th>
+                            </tr>
+                          </thead>
+                          <tbody class="text-start">
+                            <tr>
+                              <td>Foods containing ginger. Ginger is a plant that can reduce bloating and other digestive problems. </td>
+                              <td>Acidic foods, such as tomatoes and some fruits.</td>
+                            </tr>
+                            <tr>
+                              <td>Unsaturated fats. This type of fat helps the body absorb vitamins.</td>
+                              <td>Alcohol.</td>
+                            </tr>
+                            <tr>
+                              <td>Vegetables with skin. </td>
+                              <td>Carbonated drinks.</td>
+                            </tr>
+                            <tr>
+                              <td>Fruits. </td>
+                              <td>Coffee.</td>
+                            </tr>
+                            <tr>
+                              <td>Whole-grain foods. </td>
+                              <td>Fatty foods.</td>
+                            </tr>
+                            <tr>
+                              <td>Yogurt. </td>
+                              <td>Fried foods.</td>
+                            </tr>
+                            <tr>
+                              <td>Kefir.</td>
+                              <td>Fruit juices, Tea.</td>
+                            </tr>
+                            <tr>
+                              <td>Leafy green vegetables.</td>
+                              <td>Pickled foods, Spicy foods.</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call section -->
+    <div class="container-fluid text-center p-5" id="call_div">
+      <h4 class="fw-bold" id="call_content">To get customized diet plan <br> Call at this number <a class="fst-italic" href="https://wa.me/03072753025" target="_blank">+92 307 2753025</a></h4>
+    </div>
+
+    <!-- Footer Section -->
+    <div id="footer" class="container-fluid">
+      <footer class="py-5">
+        <div class="row">
+          <div class=" col-md-8 mb-3">
+            <h5 class=" fw-bolder fst-italic text-light">MedicHelp</h5>
+            <p class="text-light">Our website offers a wealth of knowledge, covering various aspects of medicine, health conditions, treatments, and preventive care. Whether you're seeking information on common ailments, chronic diseases, mental health, nutrition, or fitness, we've got you covered. Our team of medical experts and professionals ensures that all content is carefully curated, ensuring its accuracy and relevance.</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Email:</h5>
+            <p class="text-light">customersupport@medichelp.com</p>
+            <h5 class=" mt-4 text-light">Follow us:</h5>
+            <a class="social_link" href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a>
+            <a class="social_link" href="https://www.instagram.com/"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+            <a class="social_link" href="https://www.youtube.com/"><i class="fa-brands fa-youtube" style="color: #ffffff;"></i></a>
+            <a class="social_link" href="https://www.twitter.com/"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a>
+          </div>
+        </div>
+      </footer>
+      <hr>
+      <div class="col-md-12">
+        <ul class="nav flex-horizontal justify-content-center mt-4">
+          <li class="nav-item mb-2 p-3"><a href="#" class="nav-link p-0 text-light">Home</a></li>
+          <li class="nav-item mb-2 p-3"><a href="#" class="nav-link p-0 text-light">About Us</a></li>
+          <li class="nav-item mb-2 p-3"><a href="#" class="nav-link p-0 text-light">Contact Us</a></li>
+          <li class="nav-item mb-2 p-3"><a href="#" class="nav-link p-0 text-light">Login</a></li>
+          <li class="nav-item mb-2 p-3"><a href="#" class="nav-link p-0 text-light">Sign up</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <!-- Bootstrap JS Source -->
+    <script src="js/bootstrap.bundle.min.js" type="text/javascript"></script>
+</body>
+</html>

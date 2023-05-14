@@ -1,0 +1,79 @@
+/* Basic Setup */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Section */
+#logo {
+    color: #30533c;
+}
+.nav_menu_link {
+    color: #1d8843;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
+}
+.nav_menu_link:hover {
+    color: #1d8843;
+    border-bottom: 2px solid #2aff74;
+    transition: 0.3s;
+}
+#nav_login_link {
+    background-color: #30533c;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #30533c;
+}
+#nav_login_link:hover {
+    background-color: white;
+    color: #30533c;
+    transition: 0.3s;
+}
+
+/* Form Section */
+#login_heading {
+    font-weight: 600;
+    color: #30533c;
+}
+#email_input:focus, #password_input:focus {
+    box-shadow: none;
+    border: 2px solid #30533c;
+}
+#login_btn {
+    background-color: #30533c;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #30533c;
+}
+#login_btn:hover {
+    background-color: white;
+    color: #30533c;
+    transition: 0.3s;
+}
+#signup_link {
+    font-weight: 500;
+    color: #30533c;
+    text-decoration-color: #30533c;
+}
+#male_radio:active, #female_radio:active {
+    box-shadow: none;
+    outline: #30533c;
+}
+#male_radio:checked, #female_radio:checked {
+    background-color: #30533c;
+    box-shadow: none;
+    border: 1px solid #30533c;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #30533c;
+}
+.social_link i {
+    font-size: 25px;
+    margin-left: 15px;
+}

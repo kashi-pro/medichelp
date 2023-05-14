@@ -1,0 +1,85 @@
+/* Basic Setup */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* Navbar Section */
+#logo {
+    color: #30533c;
+}
+.nav_menu_link {
+    color: #1d8843;
+    font-weight: 600;
+    border-bottom: 2px solid #ffffff;
+}
+.nav_menu_link:hover {
+    color: #1d8843;
+    border-bottom: 2px solid #2aff74;
+    transition: 0.3s;
+}
+#nav_login_link {
+    background-color: #30533c;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #30533c;
+}
+#nav_login_link:hover {
+    background-color: white;
+    color: #30533c;
+    transition: 0.3s;
+}
+
+/* Diseases Section */
+#diseases_heading {
+    color: #30533c;
+    font-weight: 700;
+}
+.disease_name {
+    color: #30533c;
+    font-weight: 600;
+}
+.disease_btn {
+    background-color: #30533c;
+    color: white;
+    font-weight: 600;
+    border: 2px solid #30533c;
+}
+.disease_btn:hover {
+    background-color: white;
+    color: #30533c;
+    border: 2px solid #30533c;
+    transition: 0.3s;
+}
+#feverModalLabel {
+    color: #30533c;
+    font-weight: 700;
+}
+.modal_body_heading {
+    color: #30533c;
+    font-weight: 600;
+}
+
+/* Call Section */
+#call_div {
+    background-color: #2aff74;
+}
+#call_content {
+    color: white;
+}
+#call_content a {
+    color: #30533c;
+}
+
+/* Footer Section */
+#footer {
+    background-color: #30533c;
+}
+.social_link i {
+    font-size: 25px;
+    margin-left: 15px;
+}
